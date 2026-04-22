@@ -1,0 +1,21 @@
+title: Visible Data Quarto Deck
+author: Charlotte Jane Hadley
+version: 0.0.1
+contributes:
+  formats:
+    revealjs:
+      theme: [default, gpcds-slides.scss]
+      slide-number: "c/t"
+      footer: "<span style='color:{{<brand color neutral>}}'>www.visibledata.io</span>"
+      navigation-mode: vertical
+      controls-layout: bottom-right
+      controls-tutorial: true
+      template-partials:
+        - title-slide.html
+      include-in-header:
+        - includes.html
+      format-resources:
+        - idents_minor_four-wise.png
+        - background.jpg
+        - icon_workshop.png
+        - logo_visible-data_colour.png
