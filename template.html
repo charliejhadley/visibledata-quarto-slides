@@ -9,7 +9,8 @@
 <link href="template_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.24">
 
-  <title>GPCDS Quarto Template</title>
+  <meta name="author" content="Charlotte Hadley">
+  <title>Interactive Data Viz with Quarto</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -94,7 +95,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="template_files/libs/revealjs/dist/theme/quarto-90e27394c09beae358f838030c0972ab.css">
+  <link rel="stylesheet" href="template_files/libs/revealjs/dist/theme/quarto-b4fd803a9754242899af240bcfcc023c.css">
   <link href="template_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="template_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="template_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -193,15 +194,24 @@
   <div class="reveal">
     <div class="slides">
 
+<section id="title-slide" style="height:100%" class="center">
 
-<section id="section" class="slide level2 gpcds-title-slide">
-<h2></h2>
-<div class="titlebox" style="text-align:center; font-size: 3em;">
-<p>GPCDS Quarto Template</p>
-<p>Charlotte Jane Hadley</p>
-<p><span style="font-size:0.5em;">Date Maybe</span></p>
-<p><img data-src="idents_minor_four-wise.png" style="border: 5px solid #555;;width:25%"></p>
-</div>
+  
+  <br>
+  <br>
+  <br>
+  
+  
+  <h1 class="title">Interactive Data Viz with Quarto</h1>
+  
+    
+    <p><span style="margin:0px; font-weight:700;" class="author">Charlotte Hadley</span></p>
+    
+    <p style="opacity: 0.8">23 April 2026</p>
+    
+    
+<img src="logo_visible-data_colour.png" class="dt-tag" alt="" width="22%" style="border: 5px solid #555;">
+
 </section>
 <section>
 <section id="this-template-defaults-to-vertical" class="title-slide slide level1 center">
@@ -274,8 +284,8 @@ But provide a ‘quote-story-alt’ for emphasis.
 <p><i class="fa-solid fa-arrow-down"></i></p>
 </div>
 </section>
-<section id="gpcds-slide-styles" class="slide level2 story-slide">
-<h2>GPCDS slide styles</h2>
+<section id="visible-data-slide-styles" class="slide level2 story-slide">
+<h2>Visible Data slide styles</h2>
 <p>Notice how everything looks a little different? Well, there are these special classes:</p>
 <ul>
 <li>.graph-slide</li>
@@ -292,7 +302,7 @@ But provide a ‘quote-story-alt’ for emphasis.
 <h1>Default section break</h1>
 <p>Notice there is no arrow here.</p>
 <p>The arrow was added using</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource {verbatim} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href=""></a>::: {.section-arrow}</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href=""></a>::: {.section-arrow}</span>
 <span id="cb1-2"><a href=""></a>&lt;i class="fa-solid fa-arrow-down"&gt;&lt;/i&gt;</span>
 <span id="cb1-3"><a href=""></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
@@ -303,7 +313,7 @@ But provide a ‘quote-story-alt’ for emphasis.
 </section>
 
 <section>
-<section id="section-1" class="title-slide slide level1 center">
+<section id="section" class="title-slide slide level1 center">
 <h1></h1>
 
 </section>
@@ -311,7 +321,7 @@ But provide a ‘quote-story-alt’ for emphasis.
 <div class="columns">
 <div class="column" style="width:70%;">
 <p>Using this pattern creates across slides that feel like normal progression.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource {verbatim} number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href=""></a>#</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href=""></a>#</span>
 <span id="cb2-2"><a href=""></a></span>
 <span id="cb2-3"><a href=""></a>### 1-3, miss the 2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>However it is recommended to <strong>AVOID THIS</strong> as it has very non-standard behaviour. Check the source to see terrifying things done to the <code>&lt;section&gt;</code> tags.</p>
@@ -324,13 +334,18 @@ But provide a ‘quote-story-alt’ for emphasis.
 <div class="task-icon">
 <p><i class="fa-solid fa-clipboard-question"></i></p>
 </div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4</code></pre>
+</div>
+</div>
 
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="brand-identity/favicon_32x32.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p><span style="color:#6B2332"><span style="color:#30CED1">GRAPH</span> | <span style="color:#E0BE36">PLOT</span> | <span style="color:#FA8A5B">CHART</span> | <span style="color:#EB526F">DATA STORY</span></span></p>
+<p><span style="color:#F9F7F1">www.visibledata.io</span></p>
 </div>
 </div></div>
 
@@ -542,6 +557,44 @@ But provide a ‘quote-story-alt’ for emphasis.
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

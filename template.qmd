@@ -1,24 +1,14 @@
 ---
-pagetitle: "GPCDS Quarto Template"
+title: "Interactive Data Viz with Quarto"
+author:
+  - name: "Charlotte Hadley"
+date-as-string: "23 April 2026"
 format: 
-    gpcds-slides-revealjs:
+    visibledata-slides-revealjs:
         title-slide: false
         slide-number: "c/t"
         brand: brand.yml
 ---
-
-## {.gpcds-title-slide}
-
-::: {.titlebox style="text-align:center; font-size: 3em;"}
-
-GPCDS Quarto Template
-
-Charlotte Jane Hadley
-
-[Date Maybe]{style="font-size:0.5em;"}
-
-![](idents_minor_four-wise.png){style='border: 5px solid #555;;width:25%'}
-:::
 
 # This template defaults to vertical
 
@@ -131,7 +121,7 @@ These indicate you should go downwards.
 <i class="fa-solid fa-arrow-down"></i>
 :::
 
-## GPCDS slide styles {.story-slide}
+## Visible Data slide styles {.story-slide}
 
 Notice how everything looks a little different? Well, there are these special classes:
 
@@ -192,4 +182,9 @@ However it is recommended to **AVOID THIS** as it has very non-standard behaviou
 ::: {.task-icon}
 <i class="fa-solid fa-clipboard-question"></i>
 :::
+
+```{r}
+2 + 2
+```
+
 

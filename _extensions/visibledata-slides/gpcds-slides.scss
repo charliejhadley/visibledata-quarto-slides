@@ -58,6 +58,28 @@ $brand-neutral: #F9F7F1;
 
 // /*-- scss:rules --*/
 
+#title-slide, .p{
+   text-align: right;
+}
+
+
+#title-slide, h1, h2{
+   text-align: left;
+}
+
+#title-slide {
+  color: #F9F7F3 !important;
+
+  h1, h2, h3, p, span {
+    color: #F9F7F3 !important;
+  }
+}
+
+.reveal .backgrounds .slide-background:first-child .slide-background-content {
+  background-color: #DA5D71 !important;
+}
+
+
 /* || Quote style */
 
 .quote-graph {
