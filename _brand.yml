@@ -52,6 +52,7 @@ color:
     ux-blue-dark: '#2A3E6E'
     ux-blue-light: '#6B8EF3'
     black-mid: '#4F4F4F'
+    black-dark: '#3B3B3B'
   background: neutral
   foreground: black
   primary: brand-blue
